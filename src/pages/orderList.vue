@@ -1,13 +1,12 @@
 <template>
     <div>
-       <nav-header></nav-header> 
-       <router-view></router-view>
-       <nav-footer></nav-footer>
+        order-list
+       
     </div>
 </template>
 
 <script>
 export default {
-    name:'nav-header',
+    name:'order-list',
 }
 </script>
