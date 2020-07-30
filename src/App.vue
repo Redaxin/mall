@@ -6,6 +6,7 @@
 </template>
 
 <script>
+import storage from './storage'
 //  import axios from 'axios'
 //  import jsonp from 'jsonp'
 export default {
@@ -17,9 +18,18 @@ export default {
     return{
      
     }
-  }
+  },
+    mounted(){
+      //storage.setItem('a',1);
+      // storage.setItem('user',{a:1})
+      //storage.setItem('abc',{a:1},'user')
+      //storage.clear('a');
+      storage.clear('a','user');
+    }
+
 }
 </script>
+
 
 <style>
 #app {
